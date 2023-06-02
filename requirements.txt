@@ -1,0 +1,25 @@
+Infoware Assignment ( backend API: use MySQL as database)
+
+CRUD features in Java spring boot API / Node JS API  :
+Create Employee with multiple contact details (Relationship mapping)
+Get Employee
+Update Employee
+Delete Employee
+List Employee (with pagination)
+
+Use this form 
+https://www.formpl.us/templates/employee-contact-form
+
+How to submit assignment:
+Assignment have to submit 
+github repo link 
+share video showing the code implementation via google drive 
+( share for anyone with link)
+
+To keep in mind - We are evaluating for:
+Quality of code
+Logic implementation
+API structure and documentation
+Git handling
+Code structure 
+Time taken to work on code and submit

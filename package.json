@@ -1,0 +1,17 @@
+{
+  "name": "crud-api-employees",
+  "version": "1.0.0",
+  "description": "this is the crud api task given from infoware",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./index.js"
+  },
+  "author": "mr sajid",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.22"
+  }
+}
