@@ -2,10 +2,10 @@ const mysql = require("mysql");
 
 // Create the connection pool
 const pool = mysql.createPool({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "infoware",
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
 });
 
 // creating employee
@@ -147,16 +147,15 @@ exports.updateEmployee = async (req, res) => {
     connection.release();
 };
 
-// // deleteEmployee function that deletes Employee
-
+// deleteEmployee function that deletes Employee
 /**
  * Deletes an employee by their ID.
- * @param {Object} req - The request object containing the employee ID in the body.
+ * @param {Object} req - The request object containing the employee ID in the query.
  * @param {Object} res - The response object to send the result.
  */
 exports.deleteEmployee = async (req, res) => {
     try {
-        // Extract employee ID from the request body
+        // Extract employee ID from the request query
         const { id } = req.query;
 
         // SQL query to delete employee by ID
@@ -193,7 +192,7 @@ exports.deleteEmployee = async (req, res) => {
     // closing the connection
     connection.release();
 };
-// create a function in node js with mysql which can update multiple values depending req.body?
+
 // get all Employees using pagination --- Multiple Employees
 exports.getEmployees = async (req, res) => {
     // getting the page and limit how much elements to show
